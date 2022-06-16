@@ -1,0 +1,96 @@
+*p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: mediumblue;
+    text-align: center;
+}
+
+.input {
+    background-color: rgb(240, 240, 240);
+    width: 30%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-size: 18px;
+    box-shadow: 0px 0px 3px 5px gray;
+    outline: none;
+    padding-top: 10px;
+}
+
+.input>label {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.input>input {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 20px;
+}
+
+.input>input:hover {
+    border: 3px solid green;
+}
+
+.image {  
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.image>img{
+    width: 120px;
+    height: 100px;
+    padding: 20px;
+}
+
+button {
+    background-color: mediumseagreen;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 24px;
+    margin-top: 25px;
+    color: white;
+    border: 0px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    border: 0px;
+    background-color: rgb(0, 9, 131);
+    color: white;
+    transition: all 2.0s;
+    font-family: cursive;
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+.create {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .input{
+        width:70%;
+        justify-content: center;
+        display: flex;
+    }
+
+}
