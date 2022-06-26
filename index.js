@@ -24,17 +24,17 @@ function login() {
 function create() {
     let email = document.querySelector("#email").value;
     let password = document.querySelector("#password").value;
-    let repeat_password = document.querySelector("#repeat_password").value;
+    let repeat_password = document.querySelector("#confirm_password").value;
 
     if (email && password && repeat_password != "") {
-        if (email.includes("@gmail.com") && email.length > 11 && password === repeat_password && password.length >= 8) {
+        if (email.includes("@gmail.com") && email.length > 11 && password === confirm_password && password.length >= 8) {
             alert("Account created successfully!");
             window.open("home.html");
         } else if (!email.includes("@gmail.com")) {
             alert("Invalid email address!");
         } else if (password.length < 8) {
             alert("Password should be 8 or more characters");
-        } else if (password != repeat_password) {
+        } else if (password != confirm_password) {
             alert("Passwords does not match");
         } else {
             alert("Unknown error!")
